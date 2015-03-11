@@ -1,0 +1,42 @@
+﻿@model Bipa.Models.CodeTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CodeTable</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CodeType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodeType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodeSeverity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodeSeverity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodeDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodeDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CodeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
