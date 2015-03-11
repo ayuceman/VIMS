@@ -1,0 +1,166 @@
+﻿@using Bipa.SearchModels
+@using PagedList.Mvc
+@model PagedList.IPagedList<Bipa.Models.Teacher>
+
+@{
+    ViewBag.Title = "Teachers";
+    var so = ViewBag.SearchOptions as TeacherSearchModel ?? new TeacherSearchModel();
+}
+
+<h2>List of Teachers</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div>
+   @using (Html.BeginForm("Index", "Teachers", FormMethod.Get, new {@class = "form-inline"}))
+   {
+       <label>Name @Html.TextBox("Name", so.Name)</label>
+       <label>Tid @Html.TextBox("tid", so.tid)</label>
+    <p><input type="submit" value="Search" /></p>
+   }
+</div>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+
+            <th></th>
+            <th>
+                TID@*@Html.DisplayNameFor(model => model.TID)*@
+            </th>
+            <th>
+                SID@*@Html.DisplayNameFor(model => model.SID)*@
+            </th>
+            <th>
+                Designation@*@Html.DisplayNameFor(model => model.DEGIGNATION)*@
+            </th>
+            <th>
+                Name @*@Html.DisplayNameFor(model => model.FNAME)*@
+            </th>
+            <th>
+                Sex
+            </th>
+            <th>
+                DOB @*@Html.DisplayNameFor(model => model.DOB)*@
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                Telephone
+            </th>
+            <th>
+                Telephone 2
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Application Date
+            </th>
+            <th>
+                Remarks
+            </th>
+            <th>
+                Occupation
+            </th>
+            <th>
+                Education
+            </th>
+            <th>
+                Introduced By
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="rec_@item.ID">
+                <td>
+                    <a href="@Url.Action("Edit", new {id = item.ID})" title="Edit" class="btn btn-primary">Edit</a>
+                    <a href="javascript:void(0);" title="Delete" onclick="DeleteRecord(@item.ID); " class="btn btn-danger">Delete</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DEGIGNATION)
+                </td>
+                <td>
+                    @item.FNAME@(string.IsNullOrEmpty(item.MNAME) ? "" : " " + item.MNAME)@(string.IsNullOrEmpty(item.LNAME) ? "" : " " + item.LNAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SEX)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DOB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ADDR)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TEL1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TEL2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EMAIL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.APP_DATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REMARKS)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OCC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EDUCATION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.INTRODUCEDBY)
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+@if (Model.Count == 0)
+{
+    <p>No Records to display</p>
+}
+@Html.PagedListPager(Model, page => Url.Action("Index",
+
+        new RouteValueDictionary()
+{
+    {"page",page},{"Name",so.Name},{"tid",so.tid}
+}
+))
+@section scripts
+{
+    <script>
+
+        function DeleteRecord(id) {
+            if (window.confirm("Do you want to Delete this record?")) {
+                $.post("@Url.Action("DeleteRecord")", { id: id, })
+                    .done(function (d) {
+                        if (d.result == "Failed") {
+                            alert(d.message);
+                        }
+                        else {
+                            $("#rec_" + id).remove(); // Removes TR
+                        }
+                    }).error(function () {
+                        alert("An Error Occured during the process. Try Again Later");
+                    }).complete(function () {
+
+                    });
+            }
+        }
+    </script>
+}

@@ -1,0 +1,68 @@
+﻿@using Bipa.EditModels
+@model Bipa.EditModels.ApplicationEM
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Application</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID)
+        <div role="tabpanel">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#GeneralInfo" aria-controls="home" role="tab" data-toggle="tab">General Information</a></li>
+                <li role="presentation"><a href="#ContactInfo" aria-controls="profile" role="tab" data-toggle="tab">Contact Information</a></li>
+                <li role="presentation"><a href="#TrainingInfo" aria-controls="messages" role="tab" data-toggle="tab">Training Information</a></li>
+                <li role="presentation"><a href="#HealthInfo" aria-controls="settings" role="tab" data-toggle="tab">Health Information</a></li>
+                <li role="presentation"><a href="#HistoryInfo" aria-controls="messages" role="tab" data-toggle="tab">History Information</a></li>
+                <li role="presentation"><a href="#ExtraInfo" aria-controls="settings" role="tab" data-toggle="tab">Extra Information</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="GeneralInfo">
+                    
+                    @Html.EditorFor(m=> m.AppGenInfo,"AppGenInfo")
+                </div>
+                <div role="tabpanel" class="tab-pane" id="ContactInfo">
+                    @Html.EditorFor(m => m.AppContactInfo, "AppContactInfo")
+                </div>
+                <div role="tabpanel" class="tab-pane" id="TrainingInfo">
+                    @Html.EditorFor(m => m.AppTrainInfo, "AppTrainInfo")
+                </div>
+                <div role="tabpanel" class="tab-pane" id="HealthInfo">
+                    @Html.EditorFor(m => m.AppHealthInfo, "AppHealthInfo")
+                </div>
+                <div role="tabpanel" class="tab-pane" id="HistoryInfo">
+                    @Html.EditorFor(m => m.AppHistoryInfo, "AppHistoryInfo")
+                </div>
+                <div role="tabpanel" class="tab-pane" id="ExtraInfo">
+                    @Html.EditorFor(m => m.AppExtraInfo, "AppExtraInfo")
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

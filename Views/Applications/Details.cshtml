@@ -1,0 +1,866 @@
+﻿@model Bipa.Models.Application
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Application</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.REG_NO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REG_NO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_NO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_NO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.START_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.START_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.START_NDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.START_NDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TILL_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TILL_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TILL_NDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TILL_NDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_FNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_FNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_MNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_MNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_LNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_LNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_ADDR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_ADDR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_BUSINESS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_BUSINESS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_EDU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_EDU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_HPH_NO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_HPH_NO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_OPH_NO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_OPH_NO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_NPH_NO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_NPH_NO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_AGE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_AGE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_GENDER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_GENDER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_NDOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_NDOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_WITH_F_R)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_WITH_F_R)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.F_R_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.F_R_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.F_R_RELATION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.F_R_RELATION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_LANG_HINDI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_LANG_HINDI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_LANG_ENG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_LANG_ENG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_LANG_NEP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_LANG_NEP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_LANG_NEWARY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_LANG_NEWARY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_LANG_OTHERS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_LANG_OTHERS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ANY_PREV_TRAINING)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ANY_PREV_TRAINING)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_DISABILITY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_DISABILITY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_DISAB_DETAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_DISAB_DETAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_ANY_PREV_EXP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_ANY_PREV_EXP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_PREV_EXP_DETAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_PREV_EXP_DETAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HOW_U_KNOW_DETAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HOW_U_KNOW_DETAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REF_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REF_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REF_ADDR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REF_ADDR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REF_PH_NO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REF_PH_NO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REF_LAST_TRAIN_PLACE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REF_LAST_TRAIN_PLACE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REF_LAST_TRAIN_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REF_LAST_TRAIN_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REF_LAST_TRAIN_TEACH_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REF_LAST_TRAIN_TEACH_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REF_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REF_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REF_NDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REF_NDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.READ_ABOUT_BIPA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.READ_ABOUT_BIPA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UNDERSTAND_ABOUT_BIPA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UNDERSTAND_ABOUT_BIPA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ABIDE_IN_RULES)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ABIDE_IN_RULES)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_LEAVE_DURING)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_LEAVE_DURING)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MAINTAIN_SILENCE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MAINTAIN_SILENCE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LEAVE_OTHER_EXERCISE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LEAVE_OTHER_EXERCISE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SMOKING_HABIT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SMOKING_HABIT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QUIT_DURING)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QUIT_DURING)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PHYSICAL_ABLE_FOR_TRAIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PHYSICAL_ABLE_FOR_TRAIN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FIRST_TRAN_NDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FIRST_TRAN_NDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FIRST_TRAIN_PLACE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FIRST_TRAIN_PLACE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FIRST_TRAIN_TEACH_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FIRST_TRAIN_TEACH_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LAST_TRAN_NDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LAST_TRAN_NDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LAST_TRAIN_PLACE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LAST_TRAIN_PLACE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LAST_TRAIN_TEACH_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LAST_TRAIN_TEACH_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_ONEDAY_TRAIN_CLASS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_ONEDAY_TRAIN_CLASS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_ONDAY_TRAIN_SERV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_ONDAY_TRAIN_SERV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ANY_OTHER_TRAIN_CLASS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ANY_OTHER_TRAIN_CLASS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ANY_OTHER_TRAIN_SERV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ANY_OTHER_TRAIN_SERV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRAIN_AFTER_SATYA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRAIN_AFTER_SATYA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRAIN_AFTER_SATYA_DETAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRAIN_AFTER_SATYA_DETAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CONTINUE_AFTER_LAST_TRAIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CONTINUE_AFTER_LAST_TRAIN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_EXERCISE_IN_A_DAY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_EXERCISE_IN_A_DAY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COME_EARLY_ON_REG_DAY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COME_EARLY_ON_REG_DAY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CAN_YOU_SERVE_IF_NEEDED)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CAN_YOU_SERVE_IF_NEEDED)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COMING_DATE_IF_PARTIAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COMING_DATE_IF_PARTIAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COMING_NDATE_IF_PARTIAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COMING_NDATE_IF_PARTIAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COMING_TIME_IF_PARTIAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COMING_TIME_IF_PARTIAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GOING_DATE_IF_PARTIAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GOING_DATE_IF_PARTIAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GOING_NDATE_IF_PARTIAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GOING_NDATE_IF_PARTIAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GOING_TIME_IF_PARTIAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GOING_TIME_IF_PARTIAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REG_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REG_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REG_NDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REG_NDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NAME_FOR_EMERGENCY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NAME_FOR_EMERGENCY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RELATION_FOR_EMERGENCY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RELATION_FOR_EMERGENCY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDR_FOR_EMERGENCY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDR_FOR_EMERGENCY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PH_NO_FOR_EMERGENCY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PH_NO_FOR_EMERGENCY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRAIN_S_N)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRAIN_S_N)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HOUSE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HOUSE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.P_S_N)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.P_S_N)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FOREIGN_Y_N)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FOREIGN_Y_N)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LAST_TRAIN_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LAST_TRAIN_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FIRST_TRAIN_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FIRST_TRAIN_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CANCELLED_Y_N)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CANCELLED_Y_N)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OLD_Y_N)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OLD_Y_N)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_10_DAYS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_10_DAYS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_10_DAYS_OTHER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_10_DAYS_OTHER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_SATIPATHAN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_SATIPATHAN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_SPECIAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_SPECIAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_20_DAYS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_20_DAYS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_30_DAYS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_30_DAYS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_45_60_DAYS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_45_60_DAYS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_TEACH_SELF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_TEACH_SELF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NO_OF_SERVICE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NO_OF_SERVICE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PERSONAL_IDENTIFICATION_SUMM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PERSONAL_IDENTIFICATION_SUMM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MARRIED_Y_N)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MARRIED_Y_N)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.F_H_W_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.F_H_W_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.F_H_W_EXERCISE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.F_H_W_EXERCISE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EXER_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EXER_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NEW_Y_N)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NEW_Y_N)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NEW_Y_N1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NEW_Y_N1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MONK_Y_N)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MONK_Y_N)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CONFIRMED)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CONFIRMED)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NEP_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NEP_NAME)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

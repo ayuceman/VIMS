@@ -1,0 +1,272 @@
+﻿@model Bipa.Models.Teacher
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Teacher</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DEGIGNATION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DEGIGNATION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NDOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NDOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OCC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OCC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EDUCATION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EDUCATION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TEL1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEL1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TEL2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEL2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REMARKS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REMARKS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TENSP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TENSP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TENSNG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TENSNG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TEN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SEVEN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEVEN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TWENTY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TWENTY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.THIRTY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.THIRTY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FOURTYFIVE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FOURTYFIVE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SIXTY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SIXTY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TSC45)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TSC45)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TSC30)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TSC30)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SERVED)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SERVED)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INTRODUCEDBY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INTRODUCEDBY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SEX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FROMS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FROMS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_NDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_NDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APP_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APP_DATE)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

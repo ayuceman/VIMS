@@ -1,0 +1,152 @@
+﻿@using Bipa.SearchModels
+@using PagedList.Mvc
+@model PagedList.IPagedList<Bipa.Models.Student>
+
+@{
+    ViewBag.Title = "Students";
+    var so = ViewBag.SearchOptions as StudentSearchModel ?? new StudentSearchModel();
+}
+
+<h2>List of Students</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div>
+    @using (Html.BeginForm("Index", "Students", FormMethod.Get, new { @class = "form-inline" }))
+    {
+        <label>Name @Html.TextBox("Name", so.Name)</label>
+        <label>SID @Html.TextBox("sid", so.sid)</label>
+    <p><input type="submit" value="Search" /></p>
+    }
+</div>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th></th>
+            <th>
+                SID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Sex
+            </th>
+            <th>
+                Foreigner?
+            </th>
+            <th>
+                DOB
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                Telephone
+            </th>
+            <th>
+                Telephone 2
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Occupation
+            </th>
+            <th>
+                Education
+            </th>
+            <th>
+                Remarks
+            </th>
+            <th>
+                Introduced By
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="rec_@item.ID">
+                <td>
+                    <a href="@Url.Action("Edit", new {id = item.ID})" title="Edit" class="btn btn-primary">Edit</a>
+                    <a href="javascript:void(0);" title="Delete" onclick="DeleteRecord(@item.ID); " class="btn btn-danger">Delete</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SID)
+                </td>
+                <td>
+                    @item.FNAME@(string.IsNullOrEmpty(item.MNAME) ? "" : " " + item.MNAME)@(string.IsNullOrEmpty(item.LNAME) ? "" : " " + item.LNAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SEX)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FOREIGNER)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DOB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ADDRE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TEL1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TEL2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EMAIL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OCC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EDUCATION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REMARKS)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.INTRODUCEDBY)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@if (Model.Count == 0)
+{
+    <p>No Records to display</p>
+}
+@Html.PagedListPager(Model, page => Url.Action("Index",
+
+        new RouteValueDictionary()
+{
+    {"page",page},{"Name",so.Name},{"sid",so.sid}
+}
+))
+@section scripts
+{
+    <script>
+
+        function DeleteRecord(id) {
+            if (window.confirm("Do you want to Delete this record?")) {
+                $.post("@Url.Action("DeleteRecord")", { id: id, })
+                    .done(function (d) {
+                        if (d.result == "Failed") {
+                            alert(d.message);
+                        }
+                        else {
+                            $("#rec_" + id).remove(); // Removes TR
+                        }
+                    }).error(function () {
+                        alert("An Error Occured during the process. Try Again Later");
+                    }).complete(function () {
+
+                    });
+            }
+        }
+    </script>
+}

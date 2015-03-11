@@ -1,0 +1,34 @@
+﻿@using Bipa.Models
+@{
+    ViewBag.Title = "Home Page";
+    var apDB = new ApplicationDbContext();
+}
+
+<div class="jumbotron">
+    <h1>NVC</h1>
+    <p class="lead">NVC Applications</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <table class="table table-striped table-hover">
+            <tbody>
+                <tr>
+                    <td>
+                        Applications
+                    </td>
+                    <td>@apDB.Applications.Count()</td>
+                </tr>
+                <tr>
+                    <td>Teachers</td>
+                    <td>@apDB.Teachers.Count()</td>
+                </tr>
+                <tr>
+                    <td>Students</td>
+                    <td>@apDB.Students.Count()</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+</div>

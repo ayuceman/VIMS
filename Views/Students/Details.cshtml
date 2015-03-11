@@ -1,0 +1,210 @@
+﻿@model Bipa.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FOREIGNER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FOREIGNER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OCC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OCC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EDUCATION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EDUCATION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TEL1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEL1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TEL2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEL2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REMARKS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REMARKS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TENSNG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TENSNG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TENSP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TENSP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TEN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SEVEN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEVEN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TWENTY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TWENTY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.THIRTY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.THIRTY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FOURTYFIVE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FOURTYFIVE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SIXTY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SIXTY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SERVED)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SERVED)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INTRODUCEDBY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INTRODUCEDBY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SEX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEX)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
