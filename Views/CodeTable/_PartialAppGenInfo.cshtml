@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Bipa.EditModels.AppGenInfo>
+
+
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.APP_NO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRAIN_S_N)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.APP_FNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APP_MNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APP_LNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APP_AGE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APP_GENDER)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APP_DOB)
+        </th>
+       
+        
+        
+        
+        <th>
+            @Html.DisplayNameFor(model => model.MONK_Y_N)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CONFIRMED)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_NO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRAIN_S_N)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_FNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_MNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_LNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_AGE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_GENDER)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_DOB)
+        </td>
+       
+        
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.MONK_Y_N)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CONFIRMED)
+        </td>
+        <td>
+            @Html.ActionLink("Add Ref/Special List", "ReferralViewForm", new { APP_NO = item.APP_NO, TRAIN_S_N = item.TRAIN_S_N, APP_FNAME = item.APP_FNAME, APP_LNAME = item.APP_LNAME }) |
+           
+        </td>
+    </tr>
+}
+
+</table>

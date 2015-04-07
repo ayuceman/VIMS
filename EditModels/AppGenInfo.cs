@@ -16,8 +16,9 @@ namespace Bipa.EditModels
         [Display(Name = "Application no")]
         [Required]
         public string APP_NO { get; set; }//varchar(15)	Unchecked
-        [Required]
+       
         [Display(Name = "Train SN")]
+        [Required]
         public string TRAIN_S_N { get; set; }//	varchar(15)	Unchecked
         public DateTime? REG_DATE { get; set; }//date	Checked
         [Display(Name = "First Name")]
@@ -44,11 +45,11 @@ namespace Bipa.EditModels
         public string APP_EDU { get; set; }//varchar(50)	Checked
 
         [Display(Name = "Foreigner")]
-        public bool? FOREIGN_Y_N { get; set; }//varchar(3)	Checked
+        public string FOREIGN_Y_N { get; set; }//varchar(3)	Checked
         [Display(Name = "Monk")]
-        public bool? MONK_Y_N { get; set; }//varchar(3)	Checked
+        public string MONK_Y_N { get; set; }//varchar(3)	Checked
         [Display(Name = "Confirmed?")]
-        public bool? CONFIRMED { get; set; }//	varchar(3)	Checked
+        public string CONFIRMED { get; set; }//	varchar(3)	Checked
         
         public static void CopyInfoToEntity(AppGenInfo from, Application to)
         {
@@ -65,9 +66,9 @@ namespace Bipa.EditModels
             to.TILL_DATE = from.TILL_DATE;
             to.APP_BUSINESS = from.APP_BUSINESS;
             to.TRAIN_S_N = from.TRAIN_S_N;
-            to.FOREIGN_Y_N = from.FOREIGN_Y_N == null ? null : (from.FOREIGN_Y_N == true ? "Y" : "N");
-            to.MONK_Y_N = from.MONK_Y_N == null ? null : (from.MONK_Y_N == true ? "Y" : "N");
-            to.CONFIRMED = from.CONFIRMED == null ? null : (from.CONFIRMED == true ? "Y" : "N");
+            //to.FOREIGN_Y_N = from.FOREIGN_Y_N == null ? null : (from.FOREIGN_Y_N == true ? "Y" : "N");
+           // to.MONK_Y_N = from.MONK_Y_N == null ? null : (from.MONK_Y_N == true ? "Y" : "N");
+            //to.CONFIRMED = from.CONFIRMED == null ? null : (from.CONFIRMED == true ? "Y" : "N");
         }
         public static AppGenInfo CopyInfoFromEntity( Application from)
         {
@@ -85,9 +86,9 @@ namespace Bipa.EditModels
                 TILL_DATE = @from.TILL_DATE,
                 APP_BUSINESS = @from.APP_BUSINESS,
                 TRAIN_S_N = @from.TRAIN_S_N,
-                FOREIGN_Y_N = @from.FOREIGN_Y_N == null ? (bool?) null : (@from.FOREIGN_Y_N.ToUpper() == "Y"),
-                MONK_Y_N = @from.MONK_Y_N == null ? (bool?) null : (@from.MONK_Y_N.ToUpper() == "Y"),
-                CONFIRMED = @from.CONFIRMED == null ? (bool?) null : (@from.CONFIRMED.ToUpper() == "Y")
+                //FOREIGN_Y_N = @from.FOREIGN_Y_N == null ? (bool?) null : (@from.FOREIGN_Y_N.ToUpper() == "Y"),
+               // MONK_Y_N = @from.MONK_Y_N == null ? (bool?) null : (@from.MONK_Y_N.ToUpper() == "Y"),
+               // CONFIRMED = @from.CONFIRMED == null ? (bool?) null : (@from.CONFIRMED.ToUpper() == "Y")
             };
             return to;
         }

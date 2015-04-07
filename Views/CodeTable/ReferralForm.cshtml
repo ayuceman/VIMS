@@ -1,0 +1,88 @@
+﻿@model Bipa.Models.ReferralList
+
+@{
+    ViewBag.Title = "ReferralForm";
+}
+
+<style>
+    .shortdesc {
+        margin: 0.5em 0 0 0;
+    }
+
+        .shortdesc textarea {
+            width: 500px;
+            height: 200px;
+        }
+</style>
+<h4>First Name: @ViewBag.APP_FNAME</h4> 
+<h4>Last Name:@ViewBag.APP_LNAME</h4>
+
+
+@using (Html.BeginForm("AddReferralDetails", "CodeTable", FormMethod.Post, new { @id = "ReferralList" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Referral And Special List Details</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.APP_NO, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.APP_NO)
+                @Html.ValidationMessageFor(model => model.APP_NO)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TRAIN_S_N, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TRAIN_S_N)
+                @Html.ValidationMessageFor(model => model.TRAIN_S_N)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CodeID, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CodeID)
+                @Html.ValidationMessageFor(model => model.CodeID)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DepDay, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DepDay)
+                @Html.ValidationMessageFor(model => model.DepDay)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CaseDesc, new { @class = "control-label col-md-2" })
+            <div class="shortdesc">
+                @Html.TextAreaFor(model => model.CaseDesc)
+                @Html.ValidationMessageFor(model => model.CaseDesc)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Remarks, new { @class = "control-label col-md-2" })
+            <div class="shortdesc">
+                @Html.TextAreaFor(model => model.Remarks)
+                @Html.ValidationMessageFor(model => model.Remarks)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Add Details" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

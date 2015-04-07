@@ -10,7 +10,7 @@ namespace Bipa.Models
     {
        [Key]
        [Display(Name = "Code")]
-       [StringLength(10)]
+       [StringLength(2)]
         public string CodeID { get; set; }
 
          

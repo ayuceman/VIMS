@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "View1";
+}
+
+<h2>View1</h2>
+<script language="javascript" type="text/javascript">
+    
+    $(document).ready(function () {
+        function CreateTable() {
+    var data = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [7, 8, 9 ] ];
+
+            //var html = '<table><thead><tr>...</tr></thead><tbody>';
+
+            // var eachrow_1 = "<tr> </tr>";
+    var eachrow_1 = '';
+    for (var i = 0, len = data.length; i < len; ++i) {
+         eachrow_1 += '<tr>';
+        for (var j = 0, rowLen = data[i].length; j < rowLen; ++j ) {
+            eachrow_1 += '<td>' + data[i][j] + '</td>';
+           // $('#htmlTable').append(eachrow);
+        }
+        eachrow_1 += "</tr>";
+        $('#htmlTable').append(eachrow_1);
+    }
+    $("#htmlTable").show();
+
+//$(html).appendTo('#div1');
+
+        }
+
+        $("#btn382").click(function () {
+
+            //InsertDependentEmployee();
+            //GetPanelStatusPastJobHistory();
+            // GetPanelStatusForReferral();
+
+            CreateTable();
+            //alert("hello world")
+        });
+
+    });//end document ready
+
+    </script>
+<input id="btn382" type="button" value="Find Students" class="btn btn-default" />
+<table width="700px" id="htmlTable" style="display:none;" border="1"></table>
+    <div id='div1'> </div>
+
+
+
+

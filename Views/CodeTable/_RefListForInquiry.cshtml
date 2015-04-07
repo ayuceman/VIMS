@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Bipa.Models.ReferralListInquiry>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.APP_FNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APP_LNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRAIN_S_N)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APP_NO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APP_GENDER)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APP_ADDR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.START_DATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TILL_DATE)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_FNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_LNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRAIN_S_N)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_NO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_GENDER)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APP_ADDR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.START_DATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TILL_DATE)
+        </td>
+       
+       
+        <td>
+            @Html.ActionLink("Edit", "Edit","ReferralTable", new {  id=item.RecordID  },null) |
+            @Html.ActionLink("Details", "Details", "ReferralTable", new { id = item.RecordID }, null) |
+            @Html.ActionLink("Delete", "Delete", "ReferralTable", new { id = item.RecordID }, null)
+        </td>
+     
+    </tr>
+}
+
+</table>

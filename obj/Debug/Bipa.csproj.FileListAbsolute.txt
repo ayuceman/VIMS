@@ -64,69 +64,77 @@ D:\Project\Bipa\Bipa\bin\AutoMapper.Net4.pdb
 D:\Project\Bipa\Bipa\bin\EntityFramework.Extended.xml
 D:\Project\Bipa\Bipa\bin\PagedList.xml
 D:\Project\Bipa\Bipa\bin\PagedList.Mvc.xml
-E:\Projects\Bipa\Bipa\bin\AutoMapper.Net4.dll
-E:\Projects\Bipa\Bipa\bin\Bipa.dll.config
-E:\Projects\Bipa\Bipa\bin\Bipa.dll
-E:\Projects\Bipa\Bipa\bin\Bipa.pdb
-E:\Projects\Bipa\Bipa\bin\Antlr3.Runtime.dll
-E:\Projects\Bipa\Bipa\bin\AutoMapper.dll
-E:\Projects\Bipa\Bipa\bin\EntityFramework.dll
-E:\Projects\Bipa\Bipa\bin\EntityFramework.Extended.dll
-E:\Projects\Bipa\Bipa\bin\EntityFramework.SqlServer.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.AspNet.Identity.Core.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.AspNet.Identity.Owin.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Host.SystemWeb.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.Cookies.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.Facebook.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.Google.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.OAuth.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.Twitter.dll
-E:\Projects\Bipa\Bipa\bin\Microsoft.Web.Infrastructure.dll
-E:\Projects\Bipa\Bipa\bin\Newtonsoft.Json.dll
-E:\Projects\Bipa\Bipa\bin\Owin.dll
-E:\Projects\Bipa\Bipa\bin\PagedList.dll
-E:\Projects\Bipa\Bipa\bin\PagedList.Mvc.dll
-E:\Projects\Bipa\Bipa\bin\System.Web.Helpers.dll
-E:\Projects\Bipa\Bipa\bin\System.Web.Mvc.dll
-E:\Projects\Bipa\Bipa\bin\System.Web.Optimization.dll
-E:\Projects\Bipa\Bipa\bin\System.Web.Razor.dll
-E:\Projects\Bipa\Bipa\bin\System.Web.WebPages.Deployment.dll
-E:\Projects\Bipa\Bipa\bin\System.Web.WebPages.dll
-E:\Projects\Bipa\Bipa\bin\System.Web.WebPages.Razor.dll
-E:\Projects\Bipa\Bipa\bin\WebGrease.dll
-E:\Projects\Bipa\Bipa\bin\AutoMapper.pdb
-E:\Projects\Bipa\Bipa\bin\AutoMapper.xml
-E:\Projects\Bipa\Bipa\bin\AutoMapper.Net4.pdb
-E:\Projects\Bipa\Bipa\bin\EntityFramework.Extended.xml
-E:\Projects\Bipa\Bipa\bin\PagedList.xml
-E:\Projects\Bipa\Bipa\bin\PagedList.Mvc.xml
-E:\Projects\Bipa\Bipa\bin\System.Web.Helpers.xml
-E:\Projects\Bipa\Bipa\bin\System.Web.Mvc.xml
-E:\Projects\Bipa\Bipa\bin\System.Web.Optimization.xml
-E:\Projects\Bipa\Bipa\bin\System.Web.Razor.xml
-E:\Projects\Bipa\Bipa\bin\System.Web.WebPages.xml
-E:\Projects\Bipa\Bipa\bin\System.Web.WebPages.Deployment.xml
-E:\Projects\Bipa\Bipa\bin\System.Web.WebPages.Razor.xml
-E:\Projects\Bipa\Bipa\bin\Antlr3.Runtime.pdb
-E:\Projects\Bipa\Bipa\bin\Newtonsoft.Json.xml
-E:\Projects\Bipa\Bipa\bin\EntityFramework.xml
-E:\Projects\Bipa\Bipa\bin\EntityFramework.SqlServer.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.AspNet.Identity.Core.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.AspNet.Identity.Owin.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Host.SystemWeb.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.Facebook.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.Cookies.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.OAuth.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.Google.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.Twitter.xml
-E:\Projects\Bipa\Bipa\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-E:\Projects\Bipa\Bipa\obj\Debug\Bipa.csprojResolveAssemblyReference.cache
-E:\Projects\Bipa\Bipa\obj\Debug\Bipa.dll
-E:\Projects\Bipa\Bipa\obj\Debug\Bipa.pdb
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Bipa.dll.config
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Bipa.dll
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Bipa.pdb
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\System.Web.Mvc.dll
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\AutoMapper.pdb
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\AutoMapper.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\AutoMapper.Net4.pdb
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\EntityFramework.Extended.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\PagedList.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\PagedList.Mvc.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\System.Web.Helpers.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\System.Web.Optimization.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\System.Web.Razor.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\System.Web.WebPages.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Antlr3.Runtime.pdb
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Newtonsoft.Json.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\EntityFramework.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\EntityFramework.SqlServer.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.Owin.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.Owin.Security.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\obj\Debug\Bipa.csprojResolveAssemblyReference.cache
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\obj\Debug\Bipa.dll
+C:\Users\Ayushman\Downloads\Bipa(1)\Bipa\obj\Debug\Bipa.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Bipa.dll.config
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Bipa.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Bipa.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Newtonsoft.Json.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\AutoMapper.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\AutoMapper.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\AutoMapper.Net4.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\EntityFramework.Extended.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\PagedList.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\PagedList.Mvc.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\System.Web.Helpers.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\System.Web.Mvc.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\System.Web.Optimization.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\System.Web.Razor.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\System.Web.WebPages.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Antlr3.Runtime.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\EntityFramework.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.Owin.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.Owin.Security.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\obj\Debug\Bipa.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\obj\Debug\Bipa.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\Vipa\obj\Debug\Bipa.pdb

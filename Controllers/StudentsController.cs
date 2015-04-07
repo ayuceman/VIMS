@@ -13,7 +13,7 @@ using PagedList;
 
 namespace Bipa.Controllers
 {
-     [Authorize]
+    [Authorize]
     public class StudentsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

@@ -65,4 +65,17 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+<script type="text/javascript">
+        $(document).ready(function() {
+            $("#@Html.IdFor(m=>m.AppGenInfo.APP_DOB)").datepicker();
+            $("#@Html.IdFor(m=>m.AppGenInfo.REG_DATE)").datepicker();
+            $("#@Html.IdFor(m=>m.AppGenInfo.START_DATE)").datepicker();
+            $("#@Html.IdFor(m=>m.AppGenInfo.TILL_DATE)").datepicker();
+            $("#@Html.IdFor(m=>m.AppExtraInfo.COMING_DATE_IF_PARTIAL)").datepicker();
+            $("#@Html.IdFor(m=>m.AppExtraInfo.GOING_DATE_IF_PARTIAL)").datepicker();
+            $("#@Html.IdFor(m=>m.AppHistoryInfo.FIRST_TRAIN_DATE)").datepicker();
+            $("#@Html.IdFor(m => m.AppHistoryInfo.LAST_TRAIN_DATE)").datepicker();
+            $("#@Html.IdFor(m=>m.AppContactInfo.REF_DATE)").datepicker();
+        });
+</script>
 }
